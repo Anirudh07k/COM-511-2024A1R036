@@ -2,6 +2,6 @@
 
 password = input("Enter a Password : ")
 
-print("Password Length :",len(password))
-print("Is '@' Present - ","@" in password)
+print("Length at least 8:",len(password) >= 8)
+print("Contains '@' - ","@" in password)
 print("First & Last Characters are different? ",password[0] != password[-1])
