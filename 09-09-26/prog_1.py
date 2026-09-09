@@ -8,15 +8,16 @@ If all attempts are used, display "Account Locked"
 user = "anirudh07k"
 pwd = "#Anirudh"
 
-username = input("Enter Your Username : ")
-password = input("Enter Your Password :")
-
 attempts = 3
-
 while attempts > 0:
+    username = input("Enter Your Username : ")
+    password = input("Enter Your Password :")
     if (username == user) and (password == pwd):
         print("Login Successful :)")
         break
-    
-    attempts -= 1
+    else:
+        attempts -= 1
+        print("Wrong Details !!! Attempts Left :",attempts)
 
+if attempts == 0:
+    print("Account Locked")
