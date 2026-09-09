@@ -11,7 +11,7 @@ pwd = "#Anirudh"
 attempts = 3
 while attempts > 0:
     username = input("Enter Your Username : ")
-    password = input("Enter Your Password :")
+    password = input("Enter Your Password : ")
     if (username == user) and (password == pwd):
         print("Login Successful :)")
         break
