@@ -3,7 +3,7 @@ WAP to repeatedly calculate the sum of digits of a number until the result becom
 Example: 9875 -> 9+8+7+5 = 29 -> 2+9 = 11 -> 1 + 1 = 2
 """
 
-n = int(input("Enter A numnber : "))
+n = int(input("Enter A number : "))
 while n >= 10:
     ans = 0
 
