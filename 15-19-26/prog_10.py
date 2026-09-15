@@ -7,5 +7,5 @@ m = int(input("Enter columns length : "))
 
 for i in range(n):
     for j in range(m):
-        print("* ", end = " ")
+        print("*", end = " ")
     print()
