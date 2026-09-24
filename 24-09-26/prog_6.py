@@ -22,4 +22,7 @@ elif 50 <= marks <= 70:
 else:
     grade = 'Fail'
 
-print("Grade : ",grade)
+print("Name :",stu[0])
+print("Roll Number :",stu[1])
+print("Marks :",stu[1])
+print("Grade :",grade)
