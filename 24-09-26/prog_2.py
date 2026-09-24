@@ -1,5 +1,5 @@
 """
-WAP to store all mmonth names in a tuple. Input a month number and display the crossponding month name. 
+WAP to store all month names in a tuple. Input a month number and display the crossponding month name. 
 """
 
 months = ("January", "Feburary", "March", "April", "May", "June",
@@ -7,4 +7,7 @@ months = ("January", "Feburary", "March", "April", "May", "June",
 
 num = int(input("Enter Month Number : "))
 
-print("Month : ",months[num - 1])
+if 1 <= num <= 12:
+    print("Month : ",months[num - 1])
+else:
+    print("Invalid Month Number")
