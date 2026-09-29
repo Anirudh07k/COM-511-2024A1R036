@@ -19,22 +19,19 @@ Conditions:
 
 
 n = int(input("Enter number of tests: ")) 
-while n < 1:
-    print("Please enter at least one test.") 
-    n = int(input("Enter number of tests: ")) 
-    
 marks = list(map(int, input("Enter marks: ").split())) 
 
 start = 0 
 end = 0 
-current_start = 0
+curr = 0
+
 for i in range(1, n):
-    if marks[i] > marks[i - 1]: 
-        if i - current_start > end - start: 
-            start = current_start 
-            end = i 
+    if marks[i] > marks[i - 1]:
+        if i - curr > end - start:
+            start = curr
+            end = i
     else: 
-        current_start = i 
+        curr = i 
 
 sequence = marks[start:end + 1] 
 length = end - start + 1 
