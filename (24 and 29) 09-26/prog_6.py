@@ -13,14 +13,16 @@ print(stu)
 
 grade = ""
 
-if 85 <= marks <= 100:
+if 75 <= marks <= 100:
     grade = 'A'
-elif 71 <= marks <= 84:
+elif 61 <= marks <= 74:
     grade = 'B'
-elif 50 <= marks <= 70:
+elif 51 <= marks <= 60:
     grade = 'C'
+elif 40 <= marks <= 50:
+    grade = 'D'
 else:
-    grade = 'Fail'
+    grade = 'F'
 
 print("Name :",stu[0])
 print("Roll Number :",stu[1])

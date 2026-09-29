@@ -1,1 +1,0 @@
-tup.insert(77)
