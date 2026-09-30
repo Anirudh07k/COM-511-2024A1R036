@@ -31,6 +31,34 @@ Updated Seats : [1, 0, 0, 1, 1, 1, 1, 0, 1]
 """
 
 n = int(input("Enter total number of seats : "))
-status = list(map(int, input("Enter seat status 0 or 1 : ").split()))
+status = list(map(int, input("Enter Seat status 0 or 1 : ").split()))
 
 grp = int(input("Enter Group Size : "))
+
+start = 0
+count = 0
+
+for end in range(n):
+    if status[end] == 0:
+        count += 1
+
+    if end - start + 1 > grp:
+        if status[start] == 0:
+            count -= 1
+        start += 1
+
+    # Seat available hai
+    if end - start + 1 == grp and count == grp:
+        allocate = []
+    
+        for i in range(start, end + 1):
+            status[i] = 1
+            allocate.append(i + 1)
+    
+        print("Allocated Seats :",tuple(allocate))
+        print("Updated Seats :", status)
+        break
+
+else:
+    print("Consecutive seats not available")
+    print("Original Seats :", status)
